@@ -1,0 +1,251 @@
+.demand-page {
+  padding-bottom: 3rem;
+}
+
+.demand-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.demand-heading h1 {
+  margin: 0.5rem 0;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  letter-spacing: -0.04em;
+}
+
+.demand-heading p,
+.demand-ranking-heading p,
+.demand-muted {
+  color: #64748b;
+}
+
+.demand-heading p {
+  max-width: 65ch;
+  line-height: 1.6;
+}
+
+.demand-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.demand-periods {
+  display: inline-flex;
+  gap: 0.35rem;
+  padding: 0.35rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #f1f5f9;
+}
+
+.demand-periods button {
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: #475569;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.demand-periods button.is-active {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+.demand-periods button:focus-visible {
+  outline: 3px solid #a5b4fc;
+  outline-offset: 2px;
+}
+
+.demand-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.demand-metric {
+  display: grid;
+  align-content: start;
+  gap: 0.65rem;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgb(15 23 42 / 4%);
+}
+
+.demand-metric-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 13px;
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.demand-metric-icon.warning {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.demand-metric > strong {
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  letter-spacing: -0.05em;
+  color: #0f172a;
+}
+
+.demand-metric > small {
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.demand-ranking {
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.demand-ranking-heading {
+  padding: 1.25rem 1.5rem;
+}
+
+.demand-ranking-heading h2 {
+  margin: 0 0 0.5rem;
+}
+
+.demand-ranking-heading p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.demand-table-scroll {
+  overflow-x: auto;
+}
+
+.demand-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.demand-table caption {
+  padding: 0 1.5rem 1rem;
+  color: #64748b;
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+.demand-table thead {
+  background: #f8fafc;
+  color: #475569;
+}
+
+.demand-table th,
+.demand-table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #eef2f7;
+  vertical-align: middle;
+}
+
+.demand-table tbody tr:last-child th,
+.demand-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.demand-table tbody tr:hover {
+  background: #fafbff;
+}
+
+.demand-term {
+  display: block;
+  max-width: 280px;
+  overflow-wrap: anywhere;
+}
+
+.demand-bar {
+  width: 160px;
+  max-width: 100%;
+  height: 5px;
+  margin-top: 0.6rem;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #eef2ff;
+}
+
+.demand-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #6366f1;
+}
+
+.demand-note {
+  margin-top: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #dbe4f0;
+  border-radius: 16px;
+  background: #f8fafc;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.demand-note p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  .demand-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .demand-heading {
+    align-items: flex-start;
+  }
+}
+.demand-products {
+  margin-top: 1.5rem;
+}
+
+.demand-product-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin: 0 1.5rem 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+.demand-product-summary strong {
+  font-size: 1.25rem;
+}
+
+.demand-stock-empty {
+  display: inline-block;
+  padding: 0.3rem 0.65rem;
+  border-radius: 8px;
+  background: #fff7ed;
+  color: #9a3412;
+  font-weight: 700;
+}
+
+.demand-product-note {
+  padding: 1rem 1.5rem;
+  color: #64748b;
+  line-height: 1.6;
+}

@@ -1,0 +1,149 @@
+.credit-page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.credit-page-heading h1 {
+  margin: 0.4rem 0;
+}
+
+.credit-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.credit-metric {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.65rem;
+  min-height: 170px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  background: #fff;
+  color: #334155;
+}
+
+.credit-metric strong {
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+  letter-spacing: -0.05em;
+  color: #0f172a;
+}
+
+.credit-metric small {
+  line-height: 1.5;
+  color: #64748b;
+}
+
+.credit-metric-main {
+  border-color: transparent;
+  background: linear-gradient(135deg, #312e81, #4f46e5);
+  color: #e0e7ff;
+  box-shadow: 0 12px 30px #4338ca20;
+}
+
+.credit-metric-main strong {
+  color: #fff;
+}
+
+.credit-page-note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.credit-page-note p {
+  max-width: 650px;
+  margin: 0;
+  line-height: 1.65;
+  color: #64748b;
+}
+
+.credit-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.credit-card {
+  padding: 1.4rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 6px 24px #0f172a05;
+}
+
+.credit-card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.credit-card-heading h2 {
+  margin: 0.4rem 0 1rem;
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+.credit-breakdown {
+  margin: 0;
+}
+
+.credit-breakdown > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+}
+
+.credit-breakdown dt {
+  color: #64748b;
+}
+
+.credit-breakdown dd {
+  margin: 0;
+  text-align: right;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.credit-breakdown .credit-balance-row {
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.credit-balance-row dt,
+.credit-balance-row dd {
+  color: #15803d;
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .credit-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .credit-metric {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .credit-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
